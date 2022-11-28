@@ -28,7 +28,6 @@ public struct Map<AnnotationItems: RandomAccessCollection, OverlayItems: RandomA
 
     let usesUserTrackingMode: Bool
 
-    @available(macOS 11, *)
     @Binding var userTrackingMode: MKUserTrackingMode
 
     let annotationItems: AnnotationItems

@@ -29,6 +29,7 @@ class MKMapAnnotationView<Content: View>: MKAnnotationView {
 
     // MARK: Overrides
 
+    #if canImport(UIKit)
     override func layoutSubviews() {
         super.layoutSubviews()
 
@@ -36,6 +37,7 @@ class MKMapAnnotationView<Content: View>: MKAnnotationView {
             bounds.size = controller.preferredContentSize
         }
     }
+    #endif
 
     override func prepareForReuse() {
         super.prepareForReuse()
